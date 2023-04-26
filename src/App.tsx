@@ -1,12 +1,19 @@
 import './App.css';
+import styled from 'styled-components';
+import { HomePage } from './pages/HomePage';
 
 function App() {
 
   return (
-    <div className="App">
-      <h1>Task App</h1>
-    </div>
+    <AppWrapper>
+      <HomePage />
+    </AppWrapper>
   );
 }
 
 export default App;
+
+const AppWrapper = styled.div`
+  background-color: ${({ theme }) => theme.bg};
+  height: 100vh;
+`;
