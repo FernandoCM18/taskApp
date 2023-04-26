@@ -39,5 +39,10 @@
         ],
         "unused-imports/no-unused-imports": "error",
         "react/react-in-jsx-scope": "off"
+    },
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
     }
 }
